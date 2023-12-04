@@ -5,7 +5,7 @@
 [![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:ee.aliebrahimi@gmail.com)
 [![Github](https://img.shields.io/github/followers/ali-ebrahimii?label=Follow&style=social)](https://github.com/ali-ebrahimii)
 
-- 🌱 I am a PhD student in electronic at University of Tehran, Iran. I have good experience in Python programming and I am interested in Machine Learning, Deep Learning, AI and Computer Vision.
+- 🌱 I am a PhD student in electronic at University of Tehran, Iran. I had good experiences in Python programming and I am interested in Machine Learning, Deep Learning, AI and Computer Vision.
 - 📫 How to reach me: ee.aliebrahimi@gmail.com , a.ebrahimii@ut.ac.ir
 
 
