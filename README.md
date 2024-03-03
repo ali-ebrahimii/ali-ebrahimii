@@ -15,6 +15,8 @@
 - Machine Learning
 - Deep Learning
 - Image Processing
+- Video Processing
+- Signal Processing
 - Computer Vision
 
 ### ⚙️ Tech Stack
