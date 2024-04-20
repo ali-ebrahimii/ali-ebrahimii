@@ -12,6 +12,7 @@
 ### 🖥 Skills
 
 - Python
+- Rasa ChatBot
 - Machine Learning
 - Deep Learning
 - Image Processing
