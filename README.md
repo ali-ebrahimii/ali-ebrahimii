@@ -1,24 +1,55 @@
-# Ali Ebrahimi
+# Hi, I'm Ali Ebrahimi 👋
 
-[![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/ali-ebrahimi-264236241/)
-[![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:ee.aliebrahimi@gmail.com)
-[![Github](https://img.shields.io/github/followers/ali-ebrahimii?label=Follow&style=social)](https://github.com/ali-ebrahimii)
+**PhD researcher in Electronics · Applied AI engineer · Persian NLP & healthcare AI**
 
-- 🌱 I am a PhD student in electronic at University of Tehran, Iran. I had good experiences in Python programming and I am interested in Machine Learning, Deep Learning, AI and Computer Vision.
-- 📫 How to reach me: ee.aliebrahimi@gmail.com , a.ebrahimii@ut.ac.ir
+I build practical machine-learning systems, with a growing focus on Persian-language AI, retrieval-augmented generation, medical document intelligence, and trustworthy health applications.
 
+- 🎓 PhD student in Electronics at the University of Tehran
+- 🔭 Working across LLM evaluation, RAG, NLP, computer vision, and signal processing
+- 🌍 Interested in AI systems that make high-quality technology more useful for Persian-speaking users
+- 💬 Open to research collaboration and applied AI opportunities
 
-### 🖥 Skills
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ali-ebrahimi-264236241/)
+[![Email](https://img.shields.io/badge/Email-ee.aliebrahimi%40gmail.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:ee.aliebrahimi@gmail.com)
 
-- Python
-- Rasa ChatBot
-- Machine Learning
-- Deep Learning
-- Image Processing
-- Video Processing
-- Signal Processing
-- Computer Vision
+## Featured work
 
-### ⚙️ Tech Stack
+### [Persian User RAG Chatbot](https://github.com/ali-ebrahimii/User-RAG-ChatBot)
 
-![Bootstrap](https://img.shields.io/badge/-Python-05122A?style=flat-square&logo=Python&color=353535) ![Bootstrap](https://img.shields.io/badge/-TensorFlow-05122A?style=flat-square&logo=TensorFlow&color=353535) ![Bootstrap](https://img.shields.io/badge/-Scikit%20Learn-05122A?style=flat-square&logo=Scikit-Learn&color=353535) ![Bootstrap](https://img.shields.io/badge/-MySQL-05122A?style=flat-square&logo=MySQL&color=353535) ![Bootstrap](https://img.shields.io/badge/-PostgreSQL-05122A?style=flat-square&logo=PostgreSQL&color=353535) ![Bootstrap](https://img.shields.io/badge/-Pandas-05122A?style=flat-square&logo=Pandas&color=353535) ![Bootstrap](https://img.shields.io/badge/-Numpy-05122A?style=flat-square&logo=Numpy&color=353535) ![Bootstrap](https://img.shields.io/badge/-Matplotlib-05122A?style=flat-square&logo=Matplotlib&color=353535) ![Bootstrap](https://img.shields.io/badge/-Django-05122A?style=flat-square&logo=Django&color=353535) ![Bootstrap](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat-square&logo=Visual-Studio-Code&color=353535)
+A production-oriented Persian RAG assistant for a health-insurance setting. It combines approved document retrieval, Persian-capable language models, grounded answers, and safe fallbacks.
+
+**Python · FastAPI · Qwen · FAISS · Docker**
+
+### [Persian LLM Benchmark](https://github.com/ali-ebrahimii/Test-Qwen2.5-7B-and-14B-Llama-3.1-8B-on-Khayyam-challenge-and-ParsiNLu-Entailment)
+
+Zero-shot evaluation of Qwen2.5 and Llama 3.1 on Persian reasoning, textual entailment, and aspect-based sentiment tasks, with reproducible results and analysis.
+
+**Transformers · Jupyter · ParsiNLU · Khayyam Challenge · Quantization**
+
+### [Persian PDF Text Extraction](https://github.com/ali-ebrahimii/Persian-PDF-Text-Extraction-Pypdf2-OCR)
+
+A practical workflow for extracting Persian text from digital and scanned PDF documents using PDF parsing and OCR.
+
+**Python · OCR · PDF processing · Persian text**
+
+### [ChatGPT API Doctor Assistance](https://github.com/ali-ebrahimii/ChatGPT-API-Doctor-Assistance)
+
+An exploration of LLM-assisted healthcare workflows and conversational medical support.
+
+**Python · LLM APIs · Healthcare AI**
+
+## Tools I use
+
+**Languages:** Python, SQL  
+**AI & data:** PyTorch, TensorFlow, scikit-learn, pandas, NumPy, Transformers  
+**Applications:** FastAPI, Django, Rasa, Streamlit  
+**Data & infrastructure:** PostgreSQL, MySQL, Docker, FAISS  
+**Domains:** Persian NLP, RAG, computer vision, image/video processing, signal processing
+
+## Let's connect
+
+I am especially interested in collaborations involving Persian NLP, trustworthy LLM applications, medical AI, and applied machine learning.
+
+- LinkedIn: [ali-ebrahimi-264236241](https://www.linkedin.com/in/ali-ebrahimi-264236241/)
+- Email: [ee.aliebrahimi@gmail.com](mailto:ee.aliebrahimi@gmail.com)
+- Academic email: [a.ebrahimii@ut.ac.ir](mailto:a.ebrahimii@ut.ac.ir)
