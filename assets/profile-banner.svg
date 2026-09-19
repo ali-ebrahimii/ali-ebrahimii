@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Ali Ebrahimi — Applied AI Engineer</title>
+  <desc id="desc">A dark technical banner combining document intelligence, Persian-inspired geometry, data nodes, and signal waves.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.55" stop-color="#0b1f32"/>
+      <stop offset="1" stop-color="#11182d"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity=".15"/>
+      <stop offset=".5" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity=".55"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#67e8f9" stroke-opacity=".045"/>
+    </pattern>
+    <filter id="soft"><feGaussianBlur stdDeviation="12"/></filter>
+  </defs>
+
+  <rect width="1200" height="300" rx="22" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="22" fill="url(#grid)"/>
+  <ellipse cx="590" cy="150" rx="370" ry="160" fill="url(#glow)" filter="url(#soft)"/>
+
+  <!-- Document intelligence -->
+  <g fill="none" stroke="#67e8f9" stroke-width="1.4" opacity=".45">
+    <rect x="42" y="68" width="72" height="92" rx="7"/>
+    <path d="M57 90h40M57 107h28M57 124h36M57 141h24"/>
+    <rect x="92" y="118" width="76" height="98" rx="7" fill="#0b1f32" fill-opacity=".65"/>
+    <path d="M108 143h43M108 161h31M108 179h40M108 197h26"/>
+  </g>
+
+  <!-- Flow lines -->
+  <g fill="none" stroke="url(#flow)" stroke-linecap="round">
+    <path d="M160 105C260 105 286 65 382 96S520 178 610 146 746 86 835 116 963 212 1168 126" stroke-width="2.2"/>
+    <path d="M160 145C255 145 306 205 397 169S517 89 616 128 751 205 845 158 1000 86 1168 165" stroke-width="1.25" opacity=".7"/>
+    <path d="M160 184C285 184 318 126 410 145S550 207 655 169 790 96 892 132 1018 186 1168 110" stroke-width=".8" opacity=".45"/>
+  </g>
+
+  <!-- Persian-inspired geometric core -->
+  <g transform="translate(350 150)" fill="#07111f" fill-opacity=".62" stroke="#22d3ee">
+    <path d="M0-64C18-37 36-31 64-31 37-12 31 8 31 36 11 12-11 12-31 36-31 8-37-12-64-31-36-31-18-37 0-64Z" stroke-width="2"/>
+    <path d="M0-42C12-24 24-20 42-20 24-7 20 6 20 24 7 8-7 8-20 24-20 6-24-7-42-20-24-20-12-24 0-42Z" opacity=".55"/>
+    <circle r="7" fill="#22d3ee"/>
+  </g>
+
+  <!-- Data nodes -->
+  <g fill="#22d3ee">
+    <circle cx="468" cy="99" r="5"/><circle cx="510" cy="124" r="3"/>
+    <circle cx="650" cy="170" r="4"/><circle cx="710" cy="112" r="6"/>
+    <circle cx="812" cy="154" r="3"/><circle cx="892" cy="132" r="5"/>
+  </g>
+  <g fill="none" stroke="#67e8f9" stroke-opacity=".35">
+    <path d="M468 99l42 25 44-38M650 170l60-58 55 34 47 8M812 154l80-22"/>
+    <rect x="545" y="72" width="20" height="20" rx="4"/>
+    <rect x="756" y="136" width="20" height="20" rx="4"/>
+  </g>
+
+  <!-- Name and positioning -->
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">
+    <text x="600" y="126" text-anchor="middle" fill="#f8fafc" font-size="36" font-weight="700" letter-spacing="2">ALI EBRAHIMI</text>
+    <text x="600" y="164" text-anchor="middle" fill="#67e8f9" font-size="15" font-weight="600" letter-spacing="3">APPLIED AI · PERSIAN NLP · HEALTHCARE AI</text>
+    <text x="600" y="197" text-anchor="middle" fill="#cbd5e1" font-size="13" letter-spacing="1.1">RESEARCH → RELIABLE SYSTEMS → REAL-WORLD IMPACT</text>
+  </g>
+
+  <!-- Signal accent -->
+  <path d="M930 238h40l12-22 16 43 18-70 17 49h26l12-20 14 20h74" fill="none" stroke="url(#flow)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,64 +1,76 @@
-# Hi, I'm Ali Ebrahimi 👋
+<div align="center">
 
-**Applied AI Engineer · PhD Researcher in Electronics · Persian NLP & Healthcare AI**
+![Ali Ebrahimi — Applied AI Engineer](./assets/profile-banner.svg)
 
-I build practical machine-learning systems that turn research into usable products—especially Persian-language AI, retrieval-augmented generation, medical document intelligence, and trustworthy health applications.
+### Building trustworthy AI systems for Persian-language and healthcare applications
 
-- 🎓 PhD student in Electronics at the University of Tehran
-- 🧠 Focused on LLM evaluation, RAG, NLP, computer vision, and signal processing
-- 🛠️ Experienced in taking AI work from experimentation to APIs and containerized applications
-- 🤝 Open to Applied AI, Machine Learning, and NLP engineering opportunities, as well as research collaborations
+PhD researcher in Electronics at the University of Tehran, working across  
+**LLM systems · RAG · Persian NLP · Document AI · Machine learning**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ali-ebrahimi-264236241/)
-[![Email](https://img.shields.io/badge/Email-ee.aliebrahimi%40gmail.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:ee.aliebrahimi@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ali-ebrahimi-264236241/)
+![Open to Work](https://img.shields.io/badge/Open_to-Applied_AI_%7C_ML_%7C_NLP-14B8A6?style=for-the-badge)
 
-## Featured work
+</div>
 
-### [Persian User RAG Chatbot](https://github.com/ali-ebrahimii/User-RAG-ChatBot)
+## About me
 
-A production-oriented Persian RAG assistant developed for a health-insurance context. It combines approved-document retrieval, Persian-capable language models, grounded answers, and safe fallbacks. The public repository is a sanitized technical overview that excludes proprietary data and credentials.
+I turn machine-learning research into practical systems: preparing data, evaluating models, building APIs, designing safeguards, and preparing applications for deployment. My recent work focuses on Persian-language AI and responsible healthcare-oriented products.
 
-**Python · FastAPI · Qwen · FAISS · Docker**
+- **Research:** PhD candidate in Electrical Engineering — Electronics
+- **Engineering:** AI prototypes, REST APIs, retrieval systems, model serving, and containerized applications
+- **Specialization:** Persian NLP, trustworthy LLM applications, OCR/document intelligence, and healthcare AI
+- **Opportunity:** Open to Applied AI, Machine Learning, and NLP engineering roles and research collaborations
 
-### [Persian LLM Benchmark](https://github.com/ali-ebrahimii/Test-Qwen2.5-7B-and-14B-Llama-3.1-8B-on-Khayyam-challenge-and-ParsiNLu-Entailment)
+## Selected evidence
 
-A reproducible zero-shot evaluation of Qwen2.5 and Llama 3.1 on Persian reasoning, textual entailment, and aspect-based sentiment.
+| | Result |
+|---|---|
+| **Persian entailment** | Qwen2.5-14B achieved **62.69% accuracy** on ParsiNLU entailment |
+| **Persian reasoning** | Qwen2.5-14B achieved **43.00% accuracy** on the Khayyam benchmark |
+| **Applied RAG** | Built a Persian, evidence-grounded assistant with retrieval rejection and safe fallbacks |
+| **Document intelligence** | Developed a quality-aware Persian PDF pipeline that selects between native extraction and OCR |
 
-**Selected results:** Qwen2.5-14B reached **62.69%** accuracy on ParsiNLU entailment and **43.00%** on the Khayyam reasoning benchmark.
+## Featured projects
 
-**Transformers · Jupyter · ParsiNLU · Khayyam Challenge · 4-bit quantization**
+| Project | Engineering focus | Technologies |
+|---|---|---|
+| **[Persian User RAG Chatbot](https://github.com/ali-ebrahimii/User-RAG-ChatBot)** | Evidence-grounded answers, Persian normalization, retrieval confidence checks, safe fallbacks, API/UI separation | Python, FastAPI, Qwen, vLLM, FAISS, Streamlit |
+| **[Persian LLM Benchmark](https://github.com/ali-ebrahimii/Test-Qwen2.5-7B-and-14B-Llama-3.1-8B-on-Khayyam-challenge-and-ParsiNLu-Entailment)** | Reproducible zero-shot comparison across reasoning, entailment, and sentiment tasks | Transformers, Jupyter, ParsiNLU, 4-bit quantization |
+| **[Persian PDF Text Extraction](https://github.com/ali-ebrahimii/Persian-PDF-Text-Extraction-Pypdf2-OCR)** | Quality-aware extraction with conditional Persian/English OCR and batch-processing support | PyPDF2, Tesseract, pdf2image, multiprocessing |
+| **[Doctor's Assistant API](https://github.com/ali-ebrahimii/ChatGPT-API-Doctor-Assistance)** | Structured Persian clinical summaries, provider abstraction, validation, retries, and safety constraints | FastAPI, Pydantic, OpenAI-compatible APIs, Docker |
 
-### [Persian PDF Text Extraction](https://github.com/ali-ebrahimii/Persian-PDF-Text-Extraction-Pypdf2-OCR)
+## Skills
 
-A practical workflow for extracting Persian text from both digital and scanned PDF documents using PDF parsing and OCR.
+**AI systems**  
+Generative AI · LLM integration · LLM evaluation · Retrieval-Augmented Generation · Embeddings · Vector search · Structured outputs · Prompt and guardrail design
 
-**Python · OCR · PDF processing · Persian text**
+**Backend and model serving**  
+FastAPI · Pydantic · REST APIs · vLLM · Streamlit · Django · Rasa · Docker
 
-### [ChatGPT API Doctor Assistance](https://github.com/ali-ebrahimii/ChatGPT-API-Doctor-Assistance)
+**Machine learning and data**  
+PyTorch · TensorFlow · Transformers · scikit-learn · pandas · NumPy · FAISS · PostgreSQL · MySQL
 
-An exploration of LLM-assisted healthcare workflows and conversational medical support.
+**Applied domains**  
+Persian NLP · Document AI and OCR · Healthcare AI · Computer vision · Image and video processing · Signal processing
 
-**Python · LLM APIs · Healthcare AI**
+## How I work
 
-## What I bring
+```text
+Understand the problem → prepare trustworthy data → build a measurable baseline
+→ design the AI workflow → expose it through a usable API
+→ test failure modes and safeguards → prepare for deployment
+```
 
-- End-to-end AI prototyping: data preparation, evaluation, APIs, and deployment
-- Persian-language NLP and document-processing experience
-- Research-driven experimentation with clear, quantitative comparisons
-- Cross-domain work spanning healthcare, computer vision, and signal processing
+I value grounded answers over impressive guesses, measurable evaluation over vague claims, and maintainable systems over one-off demos.
 
-## Technical toolkit
+## Current interests
 
-**Languages:** Python, SQL  
-**AI & data:** PyTorch, TensorFlow, scikit-learn, pandas, NumPy, Transformers  
-**Applications:** FastAPI, Django, Rasa, Streamlit  
-**Data & infrastructure:** PostgreSQL, MySQL, Docker, FAISS  
-**Domains:** Persian NLP, RAG, computer vision, image/video processing, signal processing
+- Reliable RAG and agentic workflows for Persian-language products
+- Efficient serving and evaluation of multilingual open-weight models
+- Structured LLM outputs and safety controls for healthcare workflows
+- OCR, extraction, and retrieval across Persian document collections
+- Applied AI collaborations that connect research with real user needs
 
-## Let's connect
+## Connect
 
-I am especially interested in teams building trustworthy AI products, Persian-language technology, medical AI, and applied machine-learning systems.
-
-- [LinkedIn](https://www.linkedin.com/in/ali-ebrahimi-264236241/)
-- [ee.aliebrahimi@gmail.com](mailto:ee.aliebrahimi@gmail.com)
-- [a.ebrahimii@ut.ac.ir](mailto:a.ebrahimii@ut.ac.ir)
+For Applied AI, Machine Learning, NLP, or research collaboration, connect with me on [LinkedIn](https://www.linkedin.com/in/ali-ebrahimi-264236241/).
