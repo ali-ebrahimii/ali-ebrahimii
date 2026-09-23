@@ -41,14 +41,14 @@
         <text x="22" y="9" fill="#67E8F9" font-size="11" font-weight="750" letter-spacing="2.2">RESEARCH → SYSTEMS → IMPACT</text>
       </g>
 
-      <text x="52" y="134" fill="#F8FAFC" font-size="70" font-weight="820" letter-spacing="-3.2">ALI</text>
-      <text x="170" y="134" fill="none" stroke="#22D3EE" stroke-width="1.6" font-size="70" font-weight="820" letter-spacing="-3.2">EBRAHIMI</text>
+      <text x="52" y="134" fill="#22D3EE" font-size="70" font-weight="820" letter-spacing="-3.2">ALI</text>
+      <text x="170" y="134" fill="#F8FAFC" font-size="70" font-weight="820" letter-spacing="-3.2">EBRAHIMI</text>
 
       <rect x="56" y="158" width="38" height="3" rx="1.5" fill="#8B5CF6"/>
       <text x="108" y="166" fill="#F8FAFC" font-size="20" font-weight="760" letter-spacing=".8">APPLIED AI ENGINEER</text>
 
-      <text x="56" y="210" fill="#67E8F9" font-size="13.5" font-weight="700" letter-spacing="1.15">PERSIAN NLP · TRUSTWORTHY AI · DOCUMENT INTELLIGENCE</text>
-      <text x="56" y="241" fill="#CBD5E1" font-size="14" font-weight="560">PhD Researcher · University of Tehran</text>
+      <text x="56" y="210" fill="#67E8F9" font-size="14.5" font-weight="700" letter-spacing="1.15">PERSIAN NLP · TRUSTWORTHY AI · DOCUMENT INTELLIGENCE</text>
+      <text x="56" y="241" fill="#CBD5E1" font-size="15" font-weight="600">PhD Researcher · University of Tehran</text>
 
       <g transform="translate(56 270)">
         <circle cx="3" cy="-3" r="3" fill="#22D3EE"/>
