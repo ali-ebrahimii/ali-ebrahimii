@@ -2,12 +2,13 @@
 
 ![Ali Ebrahimi — Applied AI Engineer](./assets/profile-banner.svg)
 
-### Applied AI Engineer · PhD Researcher · Persian NLP & Trustworthy AI
+### Building reliable AI for Persian-language and healthcare applications
 
-I build measurable, dependable AI systems—from research and evaluation to APIs and deployment.
+**Applied AI Engineer · PhD Researcher · Persian NLP · Trustworthy AI**  
+I turn research into measurable systems—from evaluation and retrieval to safe APIs and deployment.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Let's_connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ali-ebrahimi-264236241/)
-![Open to Work](https://img.shields.io/badge/Open_to-Applied_AI_%7C_ML_%7C_NLP-11A9B8?style=flat-square)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Let's_connect-2563EB?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ali-ebrahimi-264236241/)
+![Open to Work](https://img.shields.io/badge/Open_to-Applied_AI_%7C_ML_%7C_NLP-8B5CF6?style=for-the-badge)
 
 </div>
 

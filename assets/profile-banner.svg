@@ -1,79 +1,111 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
   <title id="title">Ali Ebrahimi — Applied AI Engineer</title>
-  <desc id="desc">Editorial profile banner with bold typography and a restrained technical systems diagram.</desc>
-
+  <desc id="desc">A midnight-blue editorial banner featuring Ali Ebrahimi's name and an abstract intelligence pipeline.</desc>
   <defs>
-    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
-      <circle cx="1.5" cy="1.5" r="1" fill="#0f172a" opacity=".08"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050D18"/>
+      <stop offset=".58" stop-color="#081526"/>
+      <stop offset="1" stop-color="#10162F"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="720" y1="210" x2="1152" y2="92" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CF6"/>
+      <stop offset=".52" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#67E8F9"/>
+    </linearGradient>
+    <radialGradient id="aura" cx="0" cy="0" r="1" gradientTransform="translate(966 142) rotate(90) scale(180 260)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE" stop-opacity=".12"/>
+      <stop offset=".55" stop-color="#8B5CF6" stop-opacity=".06"/>
+      <stop offset="1" stop-color="#07111F" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#94A3B8" stroke-opacity=".07"/>
+      <circle cx="1" cy="1" r="1" fill="#67E8F9" fill-opacity=".13"/>
     </pattern>
-    <clipPath id="outer">
-      <rect width="1200" height="300" rx="22"/>
-    </clipPath>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect width="1200" height="300" rx="22"/></clipPath>
   </defs>
 
-  <g clip-path="url(#outer)">
-    <rect width="1200" height="300" fill="#fbfaf6"/>
-    <rect x="744" width="456" height="300" fill="#f1f5f4"/>
-    <rect x="744" width="456" height="300" fill="url(#dots)"/>
-    <rect width="1200" height="5" fill="#06b6d4"/>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="300" fill="url(#bg)"/>
+    <rect x="676" width="524" height="300" fill="url(#grid)"/>
+    <rect x="650" width="550" height="300" fill="url(#aura)"/>
+    <path d="M0 0H1200" stroke="#22D3EE" stroke-width="4"/>
 
-    <!-- Editorial identity -->
-    <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">
-      <rect x="62" y="38" width="224" height="27" rx="4" fill="#06b6d4"/>
-      <text x="174" y="57" text-anchor="middle" fill="#06202a" font-size="11" font-weight="800" letter-spacing="1.5">RESEARCH → SYSTEMS → IMPACT</text>
+    <!-- Identity -->
+    <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+      <g transform="translate(56 35)">
+        <rect width="9" height="9" rx="2" fill="#22D3EE"/>
+        <text x="22" y="9" fill="#67E8F9" font-size="11" font-weight="750" letter-spacing="2.2">RESEARCH → SYSTEMS → IMPACT</text>
+      </g>
 
-      <text x="60" y="130" fill="#0f172a" font-size="62" font-weight="800" letter-spacing="-2.2">ALI</text>
-      <text x="60" y="191" fill="#0f172a" font-size="62" font-weight="800" letter-spacing="-2.2">EBRAHIMI</text>
+      <text x="52" y="134" fill="#22D3EE" font-size="70" font-weight="820" letter-spacing="-3.2">ALI</text>
+      <text x="170" y="134" fill="#F8FAFC" font-size="70" font-weight="820" letter-spacing="-3.2">EBRAHIMI</text>
 
-      <rect x="62" y="217" width="24" height="3" fill="#06b6d4"/>
-      <text x="99" y="223" fill="#1e293b" font-size="15" font-weight="750" letter-spacing=".85">APPLIED AI ENGINEER · PERSIAN NLP · TRUSTWORTHY AI</text>
-      <text x="62" y="253" fill="#64748b" font-size="14" font-weight="600">PhD Researcher · University of Tehran</text>
+      <rect x="56" y="158" width="38" height="3" rx="1.5" fill="#8B5CF6"/>
+      <text x="108" y="166" fill="#F8FAFC" font-size="20" font-weight="760" letter-spacing=".8">APPLIED AI ENGINEER</text>
+
+      <text x="56" y="210" fill="#67E8F9" font-size="14.5" font-weight="700" letter-spacing="1.15">PERSIAN NLP · TRUSTWORTHY AI · DOCUMENT INTELLIGENCE</text>
+      <text x="56" y="241" fill="#CBD5E1" font-size="15" font-weight="600">PhD Researcher · University of Tehran</text>
+
+      <g transform="translate(56 270)">
+        <circle cx="3" cy="-3" r="3" fill="#22D3EE"/>
+        <text x="16" y="1" fill="#94A3B8" font-size="10.5" font-weight="650" letter-spacing="1.4">BUILDING RELIABLE AI FOR REAL-WORLD USE</text>
+      </g>
     </g>
 
-    <!-- Divider -->
-    <line x1="744" y1="30" x2="744" y2="270" stroke="#cbd5e1"/>
-    <circle cx="744" cy="60" r="4" fill="#06b6d4"/>
-    <circle cx="744" cy="240" r="4" fill="#0f172a"/>
+    <!-- Division -->
+    <path d="M662 28V272" stroke="#334155"/>
+    <circle cx="662" cy="60" r="3.5" fill="#22D3EE"/>
+    <circle cx="662" cy="242" r="3.5" fill="#8B5CF6"/>
 
-    <!-- Technical system -->
-    <g transform="translate(774 24)">
-      <text x="0" y="24" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="700" letter-spacing="1.6">PERSIAN LANGUAGE INTELLIGENCE</text>
+    <!-- Intelligence map -->
+    <g transform="translate(695 22)">
+      <text x="0" y="26" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="700" letter-spacing="2">INTELLIGENCE PIPELINE</text>
+      <text x="450" y="27" text-anchor="end" fill="#E2E8F0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="700" letter-spacing="1.5">01 / 05</text>
 
-      <path d="M0 146C65 146 82 72 151 72S245 207 316 207 363 139 414 139" fill="none" stroke="#0e7490" stroke-width="2"/>
-      <path d="M0 171C72 171 96 114 164 114S257 176 326 176 371 112 426 112" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="5 7"/>
+      <path d="M15 194C65 194 88 122 135 122C183 122 194 72 244 72C299 72 309 193 361 193C401 193 417 142 458 142"
+            fill="none" stroke="#334155" stroke-width="8" stroke-linecap="round" opacity=".38"/>
+      <path d="M15 194C65 194 88 122 135 122C183 122 194 72 244 72C299 72 309 193 361 193C401 193 417 142 458 142"
+            fill="none" stroke="url(#signal)" stroke-width="2.4" stroke-linecap="round" filter="url(#glow)"/>
 
-      <g fill="#fbfaf6" stroke="#0f172a" stroke-width="1.5">
-        <circle cx="40" cy="138" r="9"/>
-        <circle cx="151" cy="72" r="11"/>
-        <circle cx="226" cy="151" r="8"/>
-        <circle cx="316" cy="207" r="11"/>
-        <circle cx="401" cy="139" r="9"/>
+      <g fill="#07111F" stroke-width="2">
+        <circle cx="15" cy="194" r="8" stroke="#8B5CF6"/>
+        <circle cx="135" cy="122" r="8" stroke="#A78BFA"/>
+        <circle cx="244" cy="72" r="11" stroke="#22D3EE"/>
+        <circle cx="361" cy="193" r="8" stroke="#22D3EE"/>
+        <circle cx="458" cy="142" r="8" stroke="#67E8F9"/>
       </g>
-      <circle cx="151" cy="72" r="4" fill="#06b6d4"/>
-      <circle cx="316" cy="207" r="4" fill="#06b6d4"/>
-      <circle cx="40" cy="138" r="3" fill="#0f172a"/>
-      <circle cx="226" cy="151" r="3" fill="#0f172a"/>
-      <circle cx="401" cy="139" r="3" fill="#0f172a"/>
-
-      <!-- Persian-inspired geometric rhythm -->
-      <g transform="translate(286 56)" fill="none" stroke="#0f172a" opacity=".32">
-        <path d="M0-26C9-15 15-9 26 0 15 9 9 15 0 26-9 15-15 9-26 0-15-9-9-15 0-26Z"/>
-        <path d="M0-16C5-9 9-5 16 0 9 5 5 9 0 16-5 9-9 5-16 0-9-5-5-9 0-16Z"/>
-      </g>
-
-      <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" font-weight="700" letter-spacing=".8">
-        <text x="17" y="125" fill="#64748b">DATA</text>
-        <text x="127" y="51" fill="#0e7490">RETRIEVE</text>
-        <text x="198" y="139" fill="#64748b">EVALUATE</text>
-        <text x="287" y="233" fill="#0e7490">GROUND</text>
-        <text x="374" y="126" fill="#64748b">SERVE</text>
+      <g>
+        <circle cx="15" cy="194" r="3" fill="#8B5CF6"/>
+        <circle cx="135" cy="122" r="3" fill="#A78BFA"/>
+        <circle cx="244" cy="72" r="4" fill="#22D3EE"/>
+        <circle cx="361" cy="193" r="3" fill="#22D3EE"/>
+        <circle cx="458" cy="142" r="3" fill="#67E8F9"/>
       </g>
 
-      <line x1="0" y1="253" x2="426" y2="253" stroke="#cbd5e1"/>
-      <text x="0" y="273" fill="#0f172a" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="700" letter-spacing="1.2">RELIABLE BY DESIGN</text>
-      <text x="426" y="273" text-anchor="end" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9">TEHRAN · IR</text>
+      <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" font-weight="750" letter-spacing="1">
+        <text x="15" y="224" text-anchor="middle" fill="#C4B5FD">DATA</text>
+        <text x="135" y="104" text-anchor="middle" fill="#DDD6FE">RETRIEVE</text>
+        <text x="244" y="48" text-anchor="middle" fill="#67E8F9">EVALUATE</text>
+        <text x="361" y="224" text-anchor="middle" fill="#67E8F9">GROUND</text>
+        <text x="458" y="124" text-anchor="middle" fill="#A5F3FC">SERVE</text>
+      </g>
+
+      <!-- Persian-inspired geometric focus -->
+      <g transform="translate(244 147)" fill="none" stroke="#67E8F9" stroke-opacity=".2">
+        <path d="M0-31C9-18 18-9 31 0C18 9 9 18 0 31C-9 18-18 9-31 0C-18-9-9-18 0-31Z"/>
+        <path d="M0-19C6-11 11-6 19 0C11 6 6 11 0 19C-6 11-11 6-19 0C-11-6-6-11 0-19Z"/>
+        <circle r="6"/>
+      </g>
+
+      <path d="M0 248H458" stroke="#334155"/>
+      <text x="0" y="269" fill="#E2E8F0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="700" letter-spacing="1.5">MEASURED · GROUNDED · DEPLOYABLE</text>
+      <text x="458" y="269" text-anchor="end" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10">TEHRAN · IR</text>
     </g>
   </g>
 
-  <rect x=".75" y=".75" width="1198.5" height="298.5" rx="21.25" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x=".75" y=".75" width="1198.5" height="298.5" rx="21.25" fill="none" stroke="#334155" stroke-width="1.5"/>
 </svg>
