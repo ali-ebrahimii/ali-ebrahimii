@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320" role="img" aria-labelledby="title desc">
+  <title id="title">Technical stack</title>
+  <desc id="desc">Skills matrix in four columns. LLM and RAG systems: FAISS dense retrieval, sentence embeddings, confidence-gated RAG, structured JSON output, prompt and guardrail design, LLM evaluation, vLLM and 4-bit serving. Backend and delivery: Python, FastAPI and Pydantic, REST APIs with health checks, Docker and Compose, Streamlit interfaces, Django, request-ID logging. ML and data: PyTorch, TensorFlow, Hugging Face Transformers, scikit-learn, pandas and NumPy, SQL, OCR with Tesseract. Focus areas: Persian NLP, healthcare AI, document intelligence, clinical summaries, trustworthy AI, insurance support, open-weight LLMs.</desc>
+
+  <defs>
+    <linearGradient id="topline" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset=".5" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#FBBF24" stop-opacity=".6"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="900" height="320" rx="18"/></clipPath>
+  </defs>
+
+  <style><![CDATA[
+    .sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+    .mono{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+    .col{animation:rise .6s cubic-bezier(.22,1,.36,1) both}
+    .c2{animation-delay:.12s}.c3{animation-delay:.24s}.c4{animation-delay:.36s}
+    .scan{animation:sc 7s steps(7,end) infinite}
+    .k1{animation-delay:1s}.k2{animation-delay:1.15s}.k3{animation-delay:1.3s}.k4{animation-delay:1.45s}
+    @keyframes rise{from{opacity:0;transform:translateY(8px)}}
+    @keyframes sc{to{transform:translateY(182px)}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}.scan{display:none}}
+  ]]></style>
+
+  <g clip-path="url(#frame)">
+    <rect width="900" height="320" fill="#07111F"/>
+    <rect width="900" height="3" fill="url(#topline)"/>
+
+    <text class="mono" x="28" y="36" fill="#67E8F9" font-size="10.5" font-weight="700" letter-spacing="1.6">STACK.MATRIX</text>
+    <text class="mono" x="872" y="36" text-anchor="end" fill="#64748B" font-size="10" letter-spacing=".6">04 CLUSTERS · 28 CAPABILITIES</text>
+
+    <!-- Column 1 · LLM and RAG systems -->
+    <g class="col c1">
+      <rect x="28" y="52" width="196" height="238" rx="14" fill="#0A1628" stroke="#1E293B"/>
+      <rect x="42" y="68" width="3" height="14" rx="1.5" fill="#22D3EE"/>
+      <text class="mono" x="54" y="79" fill="#E2E8F0" font-size="11" font-weight="700" letter-spacing=".6">LLM &amp; RAG SYSTEMS</text>
+      <text class="mono" x="210" y="79" text-anchor="end" fill="#475569" font-size="10">07</text>
+      <rect class="scan k1" x="36" y="97" width="180" height="24" rx="6" fill="#22D3EE" fill-opacity=".09"/>
+      <g class="mono" font-size="11.5" fill="#E2E8F0">
+        <rect x="44" y="106" width="5" height="5" rx="1.5" fill="#22D3EE"/><text x="58" y="114.5">FAISS dense retrieval</text>
+        <rect x="44" y="132" width="5" height="5" rx="1.5" fill="#22D3EE"/><text x="58" y="140.5">Sentence embeddings</text>
+        <rect x="44" y="158" width="5" height="5" rx="1.5" fill="#22D3EE"/><text x="58" y="166.5">Confidence-gated RAG</text>
+        <rect x="44" y="184" width="5" height="5" rx="1.5" fill="#22D3EE"/><text x="58" y="192.5">Structured JSON output</text>
+        <rect x="44" y="210" width="5" height="5" rx="1.5" fill="#22D3EE"/><text x="58" y="218.5">Prompt &amp; guardrails</text>
+        <rect x="44" y="236" width="5" height="5" rx="1.5" fill="#22D3EE"/><text x="58" y="244.5">LLM evaluation</text>
+        <rect x="44" y="262" width="5" height="5" rx="1.5" fill="#22D3EE"/><text x="58" y="270.5">vLLM · 4-bit serving</text>
+      </g>
+      <path d="M42 122H210M42 148H210M42 174H210M42 200H210M42 226H210M42 252H210" stroke="#1E293B" stroke-opacity=".8"/>
+    </g>
+
+    <!-- Column 2 · Backend and delivery -->
+    <g class="col c2">
+      <rect x="244" y="52" width="196" height="238" rx="14" fill="#0A1628" stroke="#1E293B"/>
+      <rect x="258" y="68" width="3" height="14" rx="1.5" fill="#8B5CF6"/>
+      <text class="mono" x="270" y="79" fill="#E2E8F0" font-size="11" font-weight="700" letter-spacing=".6">BACKEND &amp; DELIVERY</text>
+      <text class="mono" x="426" y="79" text-anchor="end" fill="#475569" font-size="10">07</text>
+      <rect class="scan k2" x="252" y="97" width="180" height="24" rx="6" fill="#8B5CF6" fill-opacity=".12"/>
+      <g class="mono" font-size="11.5" fill="#E2E8F0">
+        <rect x="260" y="106" width="5" height="5" rx="1.5" fill="#8B5CF6"/><text x="274" y="114.5">Python</text>
+        <rect x="260" y="132" width="5" height="5" rx="1.5" fill="#8B5CF6"/><text x="274" y="140.5">FastAPI · Pydantic</text>
+        <rect x="260" y="158" width="5" height="5" rx="1.5" fill="#8B5CF6"/><text x="274" y="166.5">REST APIs · /healthz</text>
+        <rect x="260" y="184" width="5" height="5" rx="1.5" fill="#8B5CF6"/><text x="274" y="192.5">Docker · Compose</text>
+        <rect x="260" y="210" width="5" height="5" rx="1.5" fill="#8B5CF6"/><text x="274" y="218.5">Streamlit interfaces</text>
+        <rect x="260" y="236" width="5" height="5" rx="1.5" fill="#8B5CF6"/><text x="274" y="244.5">Django</text>
+        <rect x="260" y="262" width="5" height="5" rx="1.5" fill="#8B5CF6"/><text x="274" y="270.5">Request-ID logging</text>
+      </g>
+      <path d="M258 122H426M258 148H426M258 174H426M258 200H426M258 226H426M258 252H426" stroke="#1E293B" stroke-opacity=".8"/>
+    </g>
+
+    <!-- Column 3 · ML and data -->
+    <g class="col c3">
+      <rect x="460" y="52" width="196" height="238" rx="14" fill="#0A1628" stroke="#1E293B"/>
+      <rect x="474" y="68" width="3" height="14" rx="1.5" fill="#34D399"/>
+      <text class="mono" x="486" y="79" fill="#E2E8F0" font-size="11" font-weight="700" letter-spacing=".6">ML &amp; DATA</text>
+      <text class="mono" x="642" y="79" text-anchor="end" fill="#475569" font-size="10">07</text>
+      <rect class="scan k3" x="468" y="97" width="180" height="24" rx="6" fill="#34D399" fill-opacity=".1"/>
+      <g class="mono" font-size="11.5" fill="#E2E8F0">
+        <rect x="476" y="106" width="5" height="5" rx="1.5" fill="#34D399"/><text x="490" y="114.5">PyTorch</text>
+        <rect x="476" y="132" width="5" height="5" rx="1.5" fill="#34D399"/><text x="490" y="140.5">TensorFlow</text>
+        <rect x="476" y="158" width="5" height="5" rx="1.5" fill="#34D399"/><text x="490" y="166.5">HF Transformers</text>
+        <rect x="476" y="184" width="5" height="5" rx="1.5" fill="#34D399"/><text x="490" y="192.5">scikit-learn</text>
+        <rect x="476" y="210" width="5" height="5" rx="1.5" fill="#34D399"/><text x="490" y="218.5">pandas · NumPy</text>
+        <rect x="476" y="236" width="5" height="5" rx="1.5" fill="#34D399"/><text x="490" y="244.5">SQL</text>
+        <rect x="476" y="262" width="5" height="5" rx="1.5" fill="#34D399"/><text x="490" y="270.5">OCR · Tesseract</text>
+      </g>
+      <path d="M474 122H642M474 148H642M474 174H642M474 200H642M474 226H642M474 252H642" stroke="#1E293B" stroke-opacity=".8"/>
+    </g>
+
+    <!-- Column 4 · Focus areas -->
+    <g class="col c4">
+      <rect x="676" y="52" width="196" height="238" rx="14" fill="#0A1628" stroke="#1E293B"/>
+      <rect x="690" y="68" width="3" height="14" rx="1.5" fill="#FBBF24"/>
+      <text class="mono" x="702" y="79" fill="#E2E8F0" font-size="11" font-weight="700" letter-spacing=".6">FOCUS AREAS</text>
+      <text class="mono" x="858" y="79" text-anchor="end" fill="#475569" font-size="10">07</text>
+      <rect class="scan k4" x="684" y="97" width="180" height="24" rx="6" fill="#FBBF24" fill-opacity=".1"/>
+      <g class="mono" font-size="11.5" fill="#E2E8F0">
+        <rect x="692" y="106" width="5" height="5" rx="1.5" fill="#FBBF24"/><text x="706" y="114.5">Persian NLP</text>
+        <rect x="692" y="132" width="5" height="5" rx="1.5" fill="#FBBF24"/><text x="706" y="140.5">Healthcare AI</text>
+        <rect x="692" y="158" width="5" height="5" rx="1.5" fill="#FBBF24"/><text x="706" y="166.5">Document intelligence</text>
+        <rect x="692" y="184" width="5" height="5" rx="1.5" fill="#FBBF24"/><text x="706" y="192.5">Clinical summaries</text>
+        <rect x="692" y="210" width="5" height="5" rx="1.5" fill="#FBBF24"/><text x="706" y="218.5">Trustworthy AI</text>
+        <rect x="692" y="236" width="5" height="5" rx="1.5" fill="#FBBF24"/><text x="706" y="244.5">Insurance support</text>
+        <rect x="692" y="262" width="5" height="5" rx="1.5" fill="#FBBF24"/><text x="706" y="270.5">Open-weight LLMs</text>
+      </g>
+      <path d="M690 122H858M690 148H858M690 174H858M690 200H858M690 226H858M690 252H858" stroke="#1E293B" stroke-opacity=".8"/>
+    </g>
+  </g>
+
+  <rect x=".75" y=".75" width="898.5" height="318.5" rx="17.25" fill="none" stroke="#334155" stroke-width="1.5"/>
+</svg>

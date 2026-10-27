@@ -1,111 +1,162 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
-  <title id="title">Ali Ebrahimi — Applied AI Engineer</title>
-  <desc id="desc">A midnight-blue editorial banner featuring Ali Ebrahimi's name and an abstract intelligence pipeline.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">Ali Ebrahimi — Senior Applied AI Engineer</title>
+  <desc id="desc">Animated midnight-blue banner for Ali Ebrahimi, Senior Applied AI Engineer and PhD candidate focused on Persian NLP, RAG and trustworthy AI, beside a glowing data, retrieve, evaluate, ground and serve pipeline.</desc>
+
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="340" gradientUnits="userSpaceOnUse">
       <stop stop-color="#050D18"/>
       <stop offset=".58" stop-color="#081526"/>
       <stop offset="1" stop-color="#10162F"/>
     </linearGradient>
-    <linearGradient id="signal" x1="720" y1="210" x2="1152" y2="92" gradientUnits="userSpaceOnUse">
+    <linearGradient id="signal" x1="14" y1="0" x2="435" y2="0" gradientUnits="userSpaceOnUse">
       <stop stop-color="#8B5CF6"/>
-      <stop offset=".52" stop-color="#22D3EE"/>
+      <stop offset=".5" stop-color="#22D3EE"/>
       <stop offset="1" stop-color="#67E8F9"/>
     </linearGradient>
-    <radialGradient id="aura" cx="0" cy="0" r="1" gradientTransform="translate(966 142) rotate(90) scale(180 260)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#22D3EE" stop-opacity=".12"/>
-      <stop offset=".55" stop-color="#8B5CF6" stop-opacity=".06"/>
+    <linearGradient id="sweepV" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset=".85" stop-color="#22D3EE" stop-opacity=".09"/>
+      <stop offset="1" stop-color="#67E8F9" stop-opacity=".3"/>
+    </linearGradient>
+    <linearGradient id="sweepTop" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset="1" stop-color="#A5F3FC"/>
+    </linearGradient>
+    <radialGradient id="aura" cx="0" cy="0" r="1" gradientTransform="translate(950 170) rotate(90) scale(200 290)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE" stop-opacity=".15"/>
+      <stop offset=".55" stop-color="#8B5CF6" stop-opacity=".07"/>
       <stop offset="1" stop-color="#07111F" stop-opacity="0"/>
     </radialGradient>
     <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
       <path d="M24 0H0V24" fill="none" stroke="#94A3B8" stroke-opacity=".07"/>
-      <circle cx="1" cy="1" r="1" fill="#67E8F9" fill-opacity=".13"/>
+      <circle cx="1" cy="1" r="1" fill="#67E8F9" fill-opacity=".15"/>
     </pattern>
     <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur stdDeviation="5" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <clipPath id="frame"><rect width="1200" height="300" rx="22"/></clipPath>
+    <clipPath id="frame"><rect width="1200" height="340" rx="22"/></clipPath>
+    <clipPath id="gridArea"><rect x="690" width="510" height="340"/></clipPath>
+    <path id="pipe" d="M14 214C62 214 84 142 128 142C174 142 184 92 232 92C284 92 294 213 343 213C381 213 396 162 435 162"/>
   </defs>
 
+  <style><![CDATA[
+    .sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+    .mono{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+    .drift{animation:drift 9s linear infinite}
+    .sweep{animation:sweep 8s linear infinite}
+    .topsweep{animation:topsweep 7s linear infinite}
+    .ping{transform-box:fill-box;transform-origin:center;opacity:0;animation:ping 6s ease-out infinite}
+    .live{animation:live 1.8s ease-in-out infinite}
+    @keyframes drift{to{transform:translate(24px,24px)}}
+    @keyframes sweep{from{transform:translateX(0)}to{transform:translateX(540px)}}
+    @keyframes topsweep{from{transform:translateX(0)}to{transform:translateX(1500px)}}
+    @keyframes ping{0%{opacity:.85;transform:scale(1)}20%{opacity:0;transform:scale(2.8)}100%{opacity:0;transform:scale(2.8)}}
+    @keyframes live{0%,100%{opacity:1}50%{opacity:.3}}
+    @media (prefers-reduced-motion:reduce){
+      .drift,.sweep,.topsweep,.live{animation:none}
+      .ping,.fx{display:none}
+    }
+  ]]></style>
+
   <g clip-path="url(#frame)">
-    <rect width="1200" height="300" fill="url(#bg)"/>
-    <rect x="676" width="524" height="300" fill="url(#grid)"/>
-    <rect x="650" width="550" height="300" fill="url(#aura)"/>
-    <path d="M0 0H1200" stroke="#22D3EE" stroke-width="4"/>
+    <rect width="1200" height="340" fill="url(#bg)"/>
+    <g clip-path="url(#gridArea)">
+      <rect class="drift" x="666" y="-24" width="558" height="388" fill="url(#grid)"/>
+      <rect class="sweep" x="600" y="0" width="90" height="340" fill="url(#sweepV)"/>
+    </g>
+    <rect x="640" width="560" height="340" fill="url(#aura)"/>
+    <rect width="1200" height="4" fill="#22D3EE" fill-opacity=".5"/>
+    <rect class="topsweep" x="-300" width="300" height="4" fill="url(#sweepTop)"/>
 
     <!-- Identity -->
-    <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
-      <g transform="translate(56 35)">
-        <rect width="9" height="9" rx="2" fill="#22D3EE"/>
-        <text x="22" y="9" fill="#67E8F9" font-size="11" font-weight="750" letter-spacing="2.2">RESEARCH → SYSTEMS → IMPACT</text>
-      </g>
+    <g class="sans">
+      <rect x="56" y="31" width="9" height="9" rx="2" fill="#22D3EE"/>
+      <text x="78" y="40" fill="#67E8F9" font-size="12" font-weight="750" textLength="280" lengthAdjust="spacing">RESEARCH → SYSTEMS → IMPACT</text>
 
-      <text x="52" y="134" fill="#22D3EE" font-size="70" font-weight="820" letter-spacing="-3.2">ALI</text>
-      <text x="170" y="134" fill="#F8FAFC" font-size="70" font-weight="820" letter-spacing="-3.2">EBRAHIMI</text>
+      <text x="52" y="138" font-size="84" font-weight="820" textLength="560" lengthAdjust="spacingAndGlyphs"><tspan fill="#22D3EE">ALI</tspan><tspan fill="#F8FAFC" dx="22">EBRAHIMI</tspan></text>
 
-      <rect x="56" y="158" width="38" height="3" rx="1.5" fill="#8B5CF6"/>
-      <text x="108" y="166" fill="#F8FAFC" font-size="20" font-weight="760" letter-spacing=".8">APPLIED AI ENGINEER</text>
+      <rect x="56" y="168" width="38" height="3" rx="1.5" fill="#8B5CF6"/>
+      <text x="108" y="177" fill="#F8FAFC" font-size="25" font-weight="780" textLength="468" lengthAdjust="spacing">SENIOR APPLIED AI ENGINEER</text>
 
-      <text x="56" y="210" fill="#67E8F9" font-size="14.5" font-weight="700" letter-spacing="1.15">PERSIAN NLP · TRUSTWORTHY AI · DOCUMENT INTELLIGENCE</text>
-      <text x="56" y="241" fill="#CBD5E1" font-size="15" font-weight="600">PhD Researcher · University of Tehran</text>
+      <text x="56" y="216" fill="#67E8F9" font-size="14" font-weight="700" textLength="574" lengthAdjust="spacing">PERSIAN NLP · RAG · TRUSTWORTHY AI · DOCUMENT INTELLIGENCE</text>
+      <text x="56" y="244" fill="#CBD5E1" font-size="15" font-weight="600">PhD Candidate · University of Tehran</text>
 
-      <g transform="translate(56 270)">
-        <circle cx="3" cy="-3" r="3" fill="#22D3EE"/>
-        <text x="16" y="1" fill="#94A3B8" font-size="10.5" font-weight="650" letter-spacing="1.4">BUILDING RELIABLE AI FOR REAL-WORLD USE</text>
-      </g>
+      <rect x="56" y="268" width="384" height="30" rx="15" fill="#34D399" fill-opacity=".08" stroke="#34D399" stroke-opacity=".45"/>
+      <circle class="live" cx="75" cy="283" r="4" fill="#34D399"/>
+      <text class="mono" x="90" y="287" fill="#A7F3D0" font-size="11.5" font-weight="700" textLength="334" lengthAdjust="spacing">OPEN TO SENIOR APPLIED AI · ML · NLP ROLES</text>
     </g>
 
     <!-- Division -->
-    <path d="M662 28V272" stroke="#334155"/>
-    <circle cx="662" cy="60" r="3.5" fill="#22D3EE"/>
-    <circle cx="662" cy="242" r="3.5" fill="#8B5CF6"/>
+    <path d="M690 30V310" stroke="#334155"/>
+    <circle cx="690" cy="62" r="3.5" fill="#22D3EE"/>
+    <circle cx="690" cy="278" r="3.5" fill="#8B5CF6"/>
 
-    <!-- Intelligence map -->
-    <g transform="translate(695 22)">
-      <text x="0" y="26" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="700" letter-spacing="2">INTELLIGENCE PIPELINE</text>
-      <text x="450" y="27" text-anchor="end" fill="#E2E8F0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="700" letter-spacing="1.5">01 / 05</text>
+    <!-- Intelligence pipeline -->
+    <g transform="translate(722 30)">
+      <text class="mono" x="0" y="20" fill="#94A3B8" font-size="10" font-weight="700" textLength="190" lengthAdjust="spacing">INTELLIGENCE PIPELINE</text>
+      <text class="mono" x="437" y="21" text-anchor="end" fill="#E2E8F0" font-size="12" font-weight="700">05 STAGES</text>
 
-      <path d="M15 194C65 194 88 122 135 122C183 122 194 72 244 72C299 72 309 193 361 193C401 193 417 142 458 142"
-            fill="none" stroke="#334155" stroke-width="8" stroke-linecap="round" opacity=".38"/>
-      <path d="M15 194C65 194 88 122 135 122C183 122 194 72 244 72C299 72 309 193 361 193C401 193 417 142 458 142"
-            fill="none" stroke="url(#signal)" stroke-width="2.4" stroke-linecap="round" filter="url(#glow)"/>
+      <path d="M14 214C62 214 84 142 128 142C174 142 184 92 232 92C284 92 294 213 343 213C381 213 396 162 435 162" fill="none" stroke="#334155" stroke-width="8" stroke-linecap="round" opacity=".38"/>
+      <path d="M14 214C62 214 84 142 128 142C174 142 184 92 232 92C284 92 294 213 343 213C381 213 396 162 435 162" fill="none" stroke="url(#signal)" stroke-width="2.4" stroke-linecap="round" filter="url(#glow)"/>
+
+      <g fill="none" stroke-width="1.5">
+        <circle class="ping" cx="14" cy="214" r="9" stroke="#8B5CF6" style="animation-delay:0s"/>
+        <circle class="ping" cx="128" cy="142" r="9" stroke="#A78BFA" style="animation-delay:1.45s"/>
+        <circle class="ping" cx="232" cy="92" r="12" stroke="#22D3EE" style="animation-delay:2.75s"/>
+        <circle class="ping" cx="343" cy="213" r="9" stroke="#22D3EE" style="animation-delay:4.8s"/>
+        <circle class="ping" cx="435" cy="162" r="9" stroke="#67E8F9" style="animation-delay:5.85s"/>
+      </g>
 
       <g fill="#07111F" stroke-width="2">
-        <circle cx="15" cy="194" r="8" stroke="#8B5CF6"/>
-        <circle cx="135" cy="122" r="8" stroke="#A78BFA"/>
-        <circle cx="244" cy="72" r="11" stroke="#22D3EE"/>
-        <circle cx="361" cy="193" r="8" stroke="#22D3EE"/>
-        <circle cx="458" cy="142" r="8" stroke="#67E8F9"/>
+        <circle cx="14" cy="214" r="8" stroke="#8B5CF6"/>
+        <circle cx="128" cy="142" r="8" stroke="#A78BFA"/>
+        <circle cx="232" cy="92" r="11" stroke="#22D3EE"/>
+        <circle cx="343" cy="213" r="8" stroke="#22D3EE"/>
+        <circle cx="435" cy="162" r="8" stroke="#67E8F9"/>
       </g>
       <g>
-        <circle cx="15" cy="194" r="3" fill="#8B5CF6"/>
-        <circle cx="135" cy="122" r="3" fill="#A78BFA"/>
-        <circle cx="244" cy="72" r="4" fill="#22D3EE"/>
-        <circle cx="361" cy="193" r="3" fill="#22D3EE"/>
-        <circle cx="458" cy="142" r="3" fill="#67E8F9"/>
+        <circle cx="14" cy="214" r="3" fill="#8B5CF6"/>
+        <circle cx="128" cy="142" r="3" fill="#A78BFA"/>
+        <circle cx="232" cy="92" r="4" fill="#22D3EE"/>
+        <circle cx="343" cy="213" r="3" fill="#22D3EE"/>
+        <circle cx="435" cy="162" r="3" fill="#67E8F9"/>
       </g>
 
-      <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" font-weight="750" letter-spacing="1">
-        <text x="15" y="224" text-anchor="middle" fill="#C4B5FD">DATA</text>
-        <text x="135" y="104" text-anchor="middle" fill="#DDD6FE">RETRIEVE</text>
-        <text x="244" y="48" text-anchor="middle" fill="#67E8F9">EVALUATE</text>
-        <text x="361" y="224" text-anchor="middle" fill="#67E8F9">GROUND</text>
-        <text x="458" y="124" text-anchor="middle" fill="#A5F3FC">SERVE</text>
+      <g class="mono" font-size="10.5" font-weight="750">
+        <text x="14" y="244" text-anchor="middle" fill="#C4B5FD">DATA</text>
+        <text x="128" y="122" text-anchor="middle" fill="#DDD6FE">RETRIEVE</text>
+        <text x="232" y="68" text-anchor="middle" fill="#67E8F9">EVALUATE</text>
+        <text x="343" y="243" text-anchor="middle" fill="#67E8F9">GROUND</text>
+        <text x="435" y="143" text-anchor="middle" fill="#A5F3FC">SERVE</text>
       </g>
 
-      <!-- Persian-inspired geometric focus -->
-      <g transform="translate(244 147)" fill="none" stroke="#67E8F9" stroke-opacity=".2">
+      <g transform="translate(232 168)" fill="none" stroke="#67E8F9" stroke-opacity=".22">
         <path d="M0-31C9-18 18-9 31 0C18 9 9 18 0 31C-9 18-18 9-31 0C-18-9-9-18 0-31Z"/>
         <path d="M0-19C6-11 11-6 19 0C11 6 6 11 0 19C-6 11-11 6-19 0C-11-6-6-11 0-19Z"/>
         <circle r="6"/>
       </g>
 
-      <path d="M0 248H458" stroke="#334155"/>
-      <text x="0" y="269" fill="#E2E8F0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="700" letter-spacing="1.5">MEASURED · GROUNDED · DEPLOYABLE</text>
-      <text x="458" y="269" text-anchor="end" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10">TEHRAN · IR</text>
+      <!-- Signal pulse with a short comet trail -->
+      <g class="fx">
+        <circle r="5" fill="#F8FAFC" filter="url(#glow)">
+          <animateMotion dur="6s" repeatCount="indefinite"><mpath href="#pipe"/></animateMotion>
+        </circle>
+        <circle r="3.6" fill="#67E8F9" opacity="0" fill-opacity=".7">
+          <set attributeName="opacity" to="1" begin=".14s"/>
+          <animateMotion dur="6s" begin=".14s" repeatCount="indefinite"><mpath href="#pipe"/></animateMotion>
+        </circle>
+        <circle r="2.6" fill="#22D3EE" opacity="0" fill-opacity=".45">
+          <set attributeName="opacity" to="1" begin=".3s"/>
+          <animateMotion dur="6s" begin=".3s" repeatCount="indefinite"><mpath href="#pipe"/></animateMotion>
+        </circle>
+      </g>
+
+      <path d="M0 270H437" stroke="#334155"/>
+      <text class="mono" x="0" y="291" fill="#E2E8F0" font-size="10" font-weight="700" textLength="272" lengthAdjust="spacing">MEASURED · GROUNDED · DEPLOYABLE</text>
+      <text class="mono" x="437" y="291" text-anchor="end" fill="#94A3B8" font-size="10">@ali-ebrahimii</text>
     </g>
   </g>
 
-  <rect x=".75" y=".75" width="1198.5" height="298.5" rx="21.25" fill="none" stroke="#334155" stroke-width="1.5"/>
+  <rect x=".75" y=".75" width="1198.5" height="338.5" rx="21.25" fill="none" stroke="#334155" stroke-width="1.5"/>
 </svg>
