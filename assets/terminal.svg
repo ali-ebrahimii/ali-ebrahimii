@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260" role="img" aria-label="Terminal showing Ali Ebrahimi's profile">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050D18"/><stop offset="1" stop-color="#10162F"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="260" rx="14" fill="url(#bg)" stroke="#334155"/>
+  <rect width="900" height="36" rx="14" fill="#0F1B2D"/>
+  <rect y="22" width="900" height="14" fill="#0F1B2D"/>
+  <circle cx="24" cy="18" r="6" fill="#F87171"/><circle cx="46" cy="18" r="6" fill="#FBBF24"/><circle cx="68" cy="18" r="6" fill="#34D399"/>
+  <text x="450" y="23" text-anchor="middle" fill="#94A3B8" font-family="ui-monospace, Menlo, monospace" font-size="12">ali@ai-lab: ~/profile</text>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16">
+    <g>
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.3s" fill="freeze"/>
+      <text x="28" y="76" fill="#22D3EE">$ <tspan fill="#F8FAFC">whoami</tspan></text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.2s" fill="freeze"/>
+      <text x="28" y="102" fill="#A78BFA">Ali Ebrahimi — Applied AI Engineer · PhD Researcher</text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.2s" fill="freeze"/>
+      <text x="28" y="136" fill="#22D3EE">$ <tspan fill="#F8FAFC">cat focus.txt</tspan></text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.1s" fill="freeze"/>
+      <text x="28" y="162" fill="#67E8F9">Persian NLP · RAG · Trustworthy LLMs · Document Intelligence</text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="4.1s" fill="freeze"/>
+      <text x="28" y="196" fill="#22D3EE">$ <tspan fill="#F8FAFC">status --open-to-work</tspan></text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="5s" fill="freeze"/>
+      <text x="28" y="222" fill="#34D399">✔ Open to Applied AI / ML / NLP roles and research collaborations</text>
+    </g>
+    <rect x="28" y="236" width="10" height="3" fill="#22D3EE">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>

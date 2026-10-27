@@ -13,7 +13,18 @@ I connect research to real-world software: measurable model evaluation, evidence
 
 <br>
 
-`PYTHON` &nbsp; `LLMs` &nbsp; `RAG` &nbsp; `FASTAPI` &nbsp; `PERSIAN NLP` &nbsp; `TRUSTWORTHY AI`
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+
+<br>
+
+![Terminal](./assets/terminal.svg)
 
 </div>
 
@@ -26,6 +37,12 @@ I connect research to real-world software: measurable model evaluation, evidence
 I care about systems that do more than produce a convincing demo: their outputs should be grounded, their quality measurable, and their failure modes understood.
 
 ## Selected results
+
+<div align="center">
+
+![Benchmark results](./assets/results.svg)
+
+</div>
 
 | **Persian language evaluation** | **Built for reliability** |
 |---|---|
@@ -42,11 +59,21 @@ I care about systems that do more than produce a convincing demo: their outputs 
 
 ## How I approach AI engineering
 
-```text
-Define the problem → prepare trustworthy data → establish a baseline
-→ build and evaluate the AI workflow → test failure modes
-→ add safeguards → deliver a usable, deployment-ready system
+```mermaid
+flowchart LR
+    A[Define problem] --> B[Trustworthy data]
+    B --> C[Measured baseline]
+    C --> D[RAG / LLM workflow]
+    D --> E[Failure-mode tests]
+    E --> F[Safeguards]
+    F --> G[API + deployment]
 ```
+
+## Currently exploring
+
+- Reliable RAG and agentic workflows for Persian-language products
+- Efficient evaluation and serving of multilingual open-weight models
+- Structured LLM outputs and safety controls for healthcare workflows
 
 **Core toolkit:** Python · PyTorch · TensorFlow · Transformers · FastAPI · Pydantic · vLLM · Streamlit · Django · Docker · FAISS · SQL · OCR
 
