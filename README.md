@@ -59,11 +59,21 @@ I care about systems that do more than produce a convincing demo: their outputs 
 
 ## How I approach AI engineering
 
-```text
-Define the problem → prepare trustworthy data → establish a baseline
-→ build and evaluate the AI workflow → test failure modes
-→ add safeguards → deliver a usable, deployment-ready system
+```mermaid
+flowchart LR
+    A[Define problem] --> B[Trustworthy data]
+    B --> C[Measured baseline]
+    C --> D[RAG / LLM workflow]
+    D --> E[Failure-mode tests]
+    E --> F[Safeguards]
+    F --> G[API + deployment]
 ```
+
+## Currently exploring
+
+- Reliable RAG and agentic workflows for Persian-language products
+- Efficient evaluation and serving of multilingual open-weight models
+- Structured LLM outputs and safety controls for healthcare workflows
 
 **Core toolkit:** Python · PyTorch · TensorFlow · Transformers · FastAPI · Pydantic · vLLM · Streamlit · Django · Docker · FAISS · SQL · OCR
 
