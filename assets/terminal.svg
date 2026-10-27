@@ -1,42 +1,99 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260" role="img" aria-label="Terminal showing Ali Ebrahimi's profile">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="260" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#050D18"/><stop offset="1" stop-color="#10162F"/>
-    </linearGradient>
-  </defs>
-  <rect width="900" height="260" rx="14" fill="url(#bg)" stroke="#334155"/>
-  <rect width="900" height="36" rx="14" fill="#0F1B2D"/>
-  <rect y="22" width="900" height="14" fill="#0F1B2D"/>
-  <circle cx="24" cy="18" r="6" fill="#F87171"/><circle cx="46" cy="18" r="6" fill="#FBBF24"/><circle cx="68" cy="18" r="6" fill="#34D399"/>
-  <text x="450" y="23" text-anchor="middle" fill="#94A3B8" font-family="ui-monospace, Menlo, monospace" font-size="12">ali@ai-lab: ~/profile</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="356" viewBox="0 0 900 356" role="img" aria-labelledby="title desc">
+  <title id="title">Terminal — Ali Ebrahimi, Senior Applied AI Engineer</title>
+  <desc id="desc">Animated terminal session. whoami: Ali Ebrahimi, Senior Applied AI Engineer, PhD candidate at the University of Tehran. Focus: Persian NLP, RAG, trustworthy AI, document intelligence and healthcare AI. Systems: rag-assistant, llm-benchmark, pdf-ocr-pipeline and clinical-api. Status: open to senior applied AI, ML and NLP roles and research collaborations.</desc>
 
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16">
-    <g>
-      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.3s" fill="freeze"/>
-      <text x="28" y="76" fill="#22D3EE">$ <tspan fill="#F8FAFC">whoami</tspan></text>
+  <defs>
+    <linearGradient id="topglow" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#22D3EE" stop-opacity=".07"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="900" height="356" rx="15"/></clipPath>
+  </defs>
+
+  <style><![CDATA[
+    .mono{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;font-size:14px}
+    .pr{fill:#22D3EE;font-weight:700}
+    .cv{fill:#07111F}
+    .cm{fill:#67E8F9}
+    .cw{opacity:0}
+    @keyframes uncover{from{transform:translateX(0)}}
+    @keyframes win{from,to{opacity:1}}
+    @keyframes pop{from{opacity:0}to{opacity:1}}
+    @keyframes rise{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+    .t1{animation:uncover .36s steps(6,end) .3s both}
+    .t2{animation:uncover .78s steps(13,end) 1.35s both}
+    .t3{animation:uncover .66s steps(11,end) 2.85s both}
+    .t4{animation:uncover .96s steps(16,end) 4.15s both}
+    .w1{animation:win .36s linear .3s}
+    .w2{animation:win .78s linear 1.35s}
+    .w3{animation:win .66s linear 2.85s}
+    .w4{animation:win .96s linear 4.15s}
+    .p1{animation:pop .01s linear .3s both}
+    .p2{animation:pop .01s linear 1.35s both}
+    .p3{animation:pop .01s linear 2.85s both}
+    .p4{animation:pop .01s linear 4.15s both}
+    .p5{animation:pop .01s linear 5.85s both}
+    .o1{animation:rise .4s ease-out .8s both}
+    .o2{animation:rise .4s ease-out 2.3s both}
+    .o3{animation:rise .4s ease-out 3.65s both}
+    .o4{animation:rise .4s ease-out 5.25s both}
+    .blink{animation:blink 1.1s steps(1,end) infinite}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  ]]></style>
+
+  <g clip-path="url(#frame)">
+    <rect width="900" height="356" fill="#07111F"/>
+
+    <!-- Title bar -->
+    <rect width="900" height="44" fill="#0C1A2E"/>
+    <path d="M0 44.5H900" stroke="#1E293B"/>
+    <circle cx="26" cy="22" r="5.5" fill="#FB7185" fill-opacity=".9"/>
+    <circle cx="46" cy="22" r="5.5" fill="#FBBF24" fill-opacity=".9"/>
+    <circle cx="66" cy="22" r="5.5" fill="#34D399" fill-opacity=".9"/>
+    <text class="mono" x="450" y="26.5" text-anchor="middle" fill="#94A3B8" style="font-size:12px">~/ali-ebrahimii — zsh</text>
+    <text class="mono" x="874" y="26.5" text-anchor="end" fill="#94A3B8" style="font-size:12px"><tspan fill="#34D399">●</tspan> main</text>
+
+    <!-- 1 · whoami -->
+    <text class="mono pr p1" x="30" y="82">❯</text>
+    <text class="mono" x="54" y="82" textLength="50.4" lengthAdjust="spacing" fill="#F8FAFC" font-weight="700">whoami</text>
+    <rect class="cv t1" x="54" y="66" width="62" height="24" style="transform:translateX(50.4px)"/>
+    <g class="cw w1"><rect class="cm t1" x="54" y="69" width="8.4" height="17" rx="1" style="transform:translateX(50.4px)"/></g>
+    <text class="mono o o1" x="54" y="106"><tspan fill="#F8FAFC" font-weight="700">ali-ebrahimi</tspan><tspan fill="#475569"> · </tspan><tspan fill="#67E8F9">senior applied ai engineer</tspan><tspan fill="#475569"> · </tspan><tspan fill="#94A3B8">phd candidate @ university of tehran</tspan></text>
+    <text class="mono o o1" x="874" y="82" text-anchor="end" fill="#34D399" fill-opacity=".8">✓</text>
+
+    <!-- 2 · cat focus.txt -->
+    <text class="mono pr p2" x="30" y="144">❯</text>
+    <text class="mono" x="54" y="144" textLength="109.2" lengthAdjust="spacing"><tspan fill="#F8FAFC" font-weight="700">cat</tspan><tspan fill="#67E8F9"> focus.txt</tspan></text>
+    <rect class="cv t2" x="54" y="128" width="120" height="24" style="transform:translateX(109.2px)"/>
+    <g class="cw w2"><rect class="cm t2" x="54" y="131" width="8.4" height="17" rx="1" style="transform:translateX(109.2px)"/></g>
+    <text class="mono o o2" x="54" y="168"><tspan fill="#A5F3FC">persian nlp</tspan><tspan fill="#475569"> · </tspan><tspan fill="#A5F3FC">rag</tspan><tspan fill="#475569"> · </tspan><tspan fill="#A5F3FC">trustworthy ai</tspan><tspan fill="#475569"> · </tspan><tspan fill="#A5F3FC">document intelligence</tspan><tspan fill="#475569"> · </tspan><tspan fill="#A5F3FC">healthcare ai</tspan></text>
+    <text class="mono o o2" x="874" y="144" text-anchor="end" fill="#34D399" fill-opacity=".8">✓</text>
+
+    <!-- 3 · ls systems/ -->
+    <text class="mono pr p3" x="30" y="206">❯</text>
+    <text class="mono" x="54" y="206" textLength="92.4" lengthAdjust="spacing"><tspan fill="#F8FAFC" font-weight="700">ls</tspan><tspan fill="#67E8F9"> systems/</tspan></text>
+    <rect class="cv t3" x="54" y="190" width="104" height="24" style="transform:translateX(92.4px)"/>
+    <g class="cw w3"><rect class="cm t3" x="54" y="193" width="8.4" height="17" rx="1" style="transform:translateX(92.4px)"/></g>
+    <text class="mono o o3" y="230" font-weight="700" fill="#38BDF8"><tspan x="54">rag-assistant/</tspan><tspan x="188.4" fill="#A78BFA">llm-benchmark/</tspan><tspan x="322.8" fill="#22D3EE">pdf-ocr-pipeline/</tspan><tspan x="482.4" fill="#C4B5FD">clinical-api/</tspan></text>
+    <text class="mono o o3" x="874" y="206" text-anchor="end" fill="#34D399" fill-opacity=".8">✓</text>
+
+    <!-- 4 · status (open-to flag) -->
+    <text class="mono pr p4" x="30" y="268">❯</text>
+    <text class="mono" x="54" y="268" textLength="134.4" lengthAdjust="spacing"><tspan fill="#F8FAFC" font-weight="700">status</tspan><tspan fill="#67E8F9"> --open-to</tspan></text>
+    <rect class="cv t4" x="54" y="252" width="146" height="24" style="transform:translateX(134.4px)"/>
+    <g class="cw w4"><rect class="cm t4" x="54" y="255" width="8.4" height="17" rx="1" style="transform:translateX(134.4px)"/></g>
+    <text class="mono o o4" x="54" y="292"><tspan fill="#34D399">●</tspan><tspan fill="#94A3B8"> open to </tspan><tspan fill="#A7F3D0" font-weight="700">senior applied ai · ml · nlp roles</tspan><tspan fill="#475569"> · </tspan><tspan fill="#94A3B8">research collaborations</tspan></text>
+    <text class="mono o o4" x="874" y="268" text-anchor="end" fill="#34D399" fill-opacity=".8">✓</text>
+
+    <!-- 5 · idle prompt -->
+    <g class="p5">
+      <text class="mono pr" x="30" y="330">❯</text>
+      <rect class="cm blink" x="54" y="317" width="8.4" height="17" rx="1" fill-opacity=".9"/>
     </g>
-    <g opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.2s" fill="freeze"/>
-      <text x="28" y="102" fill="#A78BFA">Ali Ebrahimi — Applied AI Engineer · PhD Researcher</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.2s" fill="freeze"/>
-      <text x="28" y="136" fill="#22D3EE">$ <tspan fill="#F8FAFC">cat focus.txt</tspan></text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.1s" fill="freeze"/>
-      <text x="28" y="162" fill="#67E8F9">Persian NLP · RAG · Trustworthy LLMs · Document Intelligence</text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="4.1s" fill="freeze"/>
-      <text x="28" y="196" fill="#22D3EE">$ <tspan fill="#F8FAFC">status --open-to-work</tspan></text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="5s" fill="freeze"/>
-      <text x="28" y="222" fill="#34D399">✔ Open to Applied AI / ML / NLP roles and research collaborations</text>
-    </g>
-    <rect x="28" y="236" width="10" height="3" fill="#22D3EE">
-      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
-    </rect>
+
+    <rect width="900" height="130" fill="url(#topglow)"/>
   </g>
+
+  <rect x=".75" y=".75" width="898.5" height="354.5" rx="14.25" fill="none" stroke="#334155" stroke-width="1.5"/>
 </svg>

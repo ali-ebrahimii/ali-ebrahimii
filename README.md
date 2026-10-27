@@ -1,73 +1,84 @@
 <div align="center">
 
-![Ali Ebrahimi — Applied AI Engineer](./assets/profile-banner.svg)
+<img src="./assets/profile-banner.svg" width="100%" alt="Ali Ebrahimi, Senior Applied AI Engineer. Research to systems to impact: Persian NLP, RAG, trustworthy AI and document intelligence. PhD candidate at the University of Tehran. Open to senior Applied AI, ML and NLP roles.">
 
-### I build AI systems people can trust—and teams can ship.
+### I build AI systems that are measured, grounded and deployable.
 
-**Applied AI Engineer · PhD Researcher · Persian NLP · Trustworthy AI**
+**Senior Applied AI Engineer · Persian NLP · RAG · Trustworthy AI**
 
-I connect research to real-world software: measurable model evaluation, evidence-grounded retrieval, and reliable AI applications.
+I turn research into dependable software: retrieval that knows when to say *"I don't know"*, evaluations that show exactly where a model breaks, and clinical-text services with explicit safety constraints.
 
-[![LinkedIn](https://img.shields.io/badge/Let's_connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ali-ebrahimi-264236241/)
-![Open to Work](https://img.shields.io/badge/Available_for-Applied_AI_%7C_ML_%7C_NLP-7C3AED?style=for-the-badge)
+[<img src="./assets/cta.svg" width="296" alt="Connect with Ali Ebrahimi on LinkedIn">](https://www.linkedin.com/in/ali-ebrahimi-264236241/)
 
-<br>
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+[Featured systems](#featured-systems) · [Architecture](#architecture-spotlight) · [Evidence](#evidence) · [Principles](#engineering-principles) · [Stack](#technical-depth) · [Work with me](#work-with-me)
 
 <br>
 
-![Terminal](./assets/terminal.svg)
+<img src="./assets/terminal.svg" width="100%" alt="Animated terminal session. whoami: Ali Ebrahimi, Senior Applied AI Engineer, PhD candidate at the University of Tehran. Focus: Persian NLP, RAG, trustworthy AI, document intelligence, healthcare AI. Systems: rag-assistant, llm-benchmark, pdf-ocr-pipeline, clinical-api. Status: open to senior applied AI, ML and NLP roles and research collaborations.">
 
 </div>
 
-## What I bring
+## What I own
 
-| **Research mindset** | **Engineering mindset** | **Domain focus** |
-|---|---|---|
-| PhD candidate in Electrical Engineering — Electronics at the University of Tehran | Retrieval, evaluation, APIs, model serving, safeguards, and containerized applications | Persian NLP, document intelligence, trustworthy LLMs, and healthcare AI |
+- **Research rigor** — PhD candidate in Electrical Engineering (Electronics) at the University of Tehran. Like-for-like zero-shot evaluation of open-weight LLMs on Persian tasks, reported honestly, including where models are no better than chance.
+- **System design** — End-to-end Persian retrieval systems: normalization, intent routing, dense retrieval, confidence gating and safe fallbacks — designed for the failure case first.
+- **Delivery** — Typed FastAPI services with health checks and request-ID logging, Docker/Compose packaging, and open-weight models served through vLLM.
 
-I care about systems that do more than produce a convincing demo: their outputs should be grounded, their quality measurable, and their failure modes understood.
+## Featured systems
 
-## Selected results
+- **[Persian RAG Assistant](https://github.com/ali-ebrahimii/User-RAG-ChatBot)** — *pre-production prototype for a health-insurance platform*<br>
+  Answers Persian questions only from approved documents. Intent routing, query expansion and dense retrieval feed a score-and-margin trust gate — weak evidence ends in a transparent fallback, never a guess.<br>
+  `FastAPI` · `FAISS` · `multilingual-e5-large` · `Qwen2.5-7B (AWQ)` · `vLLM`
 
-<div align="center">
+- **[Persian LLM Benchmark](https://github.com/ali-ebrahimii/Test-Qwen2.5-7B-and-14B-Llama-3.1-8B-on-Khayyam-challenge-and-ParsiNLu-Entailment)** — *zero-shot evaluation study*<br>
+  Compares Qwen2.5-14B, Qwen2.5-7B and Llama-3.1-8B on ParsiNLU entailment, Khayyam reasoning and aspect-based sentiment with fully Persian prompts and 4-bit quantization.<br>
+  `Transformers` · `bitsandbytes` · `ParsiNLU` · `Khayyam`
 
-![Benchmark results](./assets/results.svg)
+- **[Persian PDF Text Extraction](https://github.com/ali-ebrahimii/Persian-PDF-Text-Extraction-Pypdf2-OCR)** — *dataset-preparation pipeline*<br>
+  Extracts natively first, scores the text, and falls back to 300-DPI Persian + English OCR when quality is low. Parallel batches with resumable CSV tracking.<br>
+  `PyPDF2` · `Tesseract` · `pdf2image` · `multiprocessing`
 
-</div>
+- **[Doctor's Assistant API](https://github.com/ali-ebrahimii/ChatGPT-API-Doctor-Assistance)** — *production-oriented clinical-summary service*<br>
+  Turns raw patient-intake JSON into a fixed-schema Persian clinical summary — validated, auto-repaired when malformed, and explicitly not a final diagnosis.<br>
+  `FastAPI` · `Pydantic` · `OpenAI API` · `Docker`
 
-| **Persian language evaluation** | **Built for reliability** |
+## Architecture spotlight
+
+**Persian RAG assistant — evidence or fallback, never a guess.**
+
+<img src="./assets/architecture.svg" width="100%" alt="System architecture of the Persian RAG assistant. Ingest lane: approved .docx documents are extracted and normalized, chunked at 350 tokens with 80 overlap, embedded and stored in a rebuildable FAISS index. Serve lane: a user question goes through rule-based intent routing, intent-aware query expansion and dense retrieval into a trust gate that checks score and margin. Passing answers are generated by Qwen2.5 on vLLM; failing ones reach a safe fallback after up to three retrieval passes. Out-of-scope and medical questions go to a policy fallback. Responses follow an Answer and status contract.">
+
+- **A trust gate, not blind top-k.** Retrieved chunks must clear a minimum similarity score *and* a top-1/top-2 margin before the LLM sees them. Short queries are relaxed; the intent-anchor pass is held to a stricter bar.
+- **Three retrieval passes, then a graceful fallback.** The question itself, an intent anchor, then a rule-based rewrite. If none is trustworthy, the user gets an honest "outside my scope" answer with a human contact instead of a hallucination.
+- **Policy before retrieval.** Rule-based Persian intent routing short-circuits empty, out-of-scope and medical-advice questions before any retrieval or generation, so flagged requests never reach the model.
+- **Auditable by construction.** Every response carries a typed status (`ok`, `ok_anchor`, `ok_rewrite`, `fallback`, `medical_redirect`, …) alongside `/healthz` and request-ID logging.
+
+<sub>Working pre-production prototype built for a health-insurance platform; the public repository is a sanitized portfolio snapshot.</sub>
+
+## Evidence
+
+<img src="./assets/benchmarks.svg" width="100%" alt="Benchmark dashboard. Zero-shot, Persian-prompt results for 4-bit open-weight LLMs. ParsiNLU entailment accuracy: Qwen2.5-14B 62.69 percent, Qwen2.5-7B 61.19 percent, Llama-3.1-8B 53.76 percent. Khayyam reasoning accuracy: Qwen2.5-14B 43.00 percent, Qwen2.5-7B 36.44 percent, Llama-3.1-8B 28.50 percent, against a 25 percent random baseline and a 50 percent GPT-4 reference. Sentiment is excluded because every model scored near chance.">
+
+- **Entailment:** Qwen2.5-14B reaches **62.69%** on ParsiNLU, and Qwen2.5-7B lands within 1.5 points (61.19%) — a useful signal when serving cost matters.
+- **Reasoning:** On the Khayyam challenge Qwen2.5-14B scores **43.00%**, and every model clears the 25% random baseline.
+- **Honest reporting:** Aspect-based sentiment sat near the ~14% random baseline for all three models, so it is reported as unsolved zero-shot rather than buried.
+
+<sub>Protocol: zero-shot, fully Persian prompts, 4-bit NF4 quantization — identical for every model. Reference lines come from the public Khayyam leaderboard as recorded in the repository; evaluation protocols may differ.</sub>
+
+## Engineering principles
+
+| Principle | Where it shows up |
 |---|---|
-| **62.69% accuracy** — Qwen2.5-14B on ParsiNLU entailment<br>**43.00% accuracy** — Qwen2.5-14B on the Khayyam benchmark | Persian RAG assistant with retrieval-confidence checks and safe fallbacks<br>Quality-aware PDF pipeline that selects native extraction or OCR |
+| **Ground every answer** | The RAG assistant answers only from approved documents, and retrieval must clear a score-and-margin gate before generation. |
+| **Measure before you scale** | One zero-shot protocol across three open-weight models, with near-chance results called out instead of hidden. |
+| **Fail safe by design** | Typed response statuses, human-contact fallbacks and medical-advice redirects; the clinical API states plainly that it gives no final diagnosis. |
+| **Ship the whole system** | FastAPI contracts, `/healthz`, request-ID logging, Docker/Compose packaging and resumable batch pipelines. |
 
-## Featured projects
+## Technical depth
 
-| Project | What it does | Technologies |
-|---|---|---|
-| [**Persian User RAG Chatbot**](https://github.com/ali-ebrahimii/User-RAG-ChatBot) | Generates evidence-grounded Persian answers with normalization, confidence checks, and safe fallbacks | Python · FastAPI · Qwen · vLLM · FAISS |
-| [**Persian LLM Benchmark**](https://github.com/ali-ebrahimii/Test-Qwen2.5-7B-and-14B-Llama-3.1-8B-on-Khayyam-challenge-and-ParsiNLu-Entailment) | Compares open models across Persian reasoning, entailment, and sentiment tasks | Transformers · ParsiNLU · Quantization |
-| [**Persian PDF Text Extraction**](https://github.com/ali-ebrahimii/Persian-PDF-Text-Extraction-Pypdf2-OCR) | Chooses native extraction or Persian/English OCR based on document text quality | PyPDF2 · Tesseract · pdf2image |
-| [**Doctor's Assistant API**](https://github.com/ali-ebrahimii/ChatGPT-API-Doctor-Assistance) | Produces structured Persian clinical summaries with validation and safety constraints | FastAPI · Pydantic · Docker |
+<img src="./assets/stack.svg" width="100%" alt="Technical stack matrix. LLM and RAG systems: FAISS dense retrieval, sentence embeddings, confidence-gated RAG, structured JSON output, prompt and guardrails, LLM evaluation, vLLM and 4-bit serving. Backend and delivery: Python, FastAPI and Pydantic, REST APIs with health checks, Docker and Compose, Streamlit interfaces, Django, request-ID logging. ML and data: PyTorch, TensorFlow, Hugging Face Transformers, scikit-learn, pandas and NumPy, SQL, OCR with Tesseract. Focus areas: Persian NLP, healthcare AI, document intelligence, clinical summaries, trustworthy AI, insurance support, open-weight LLMs.">
 
-## How I approach AI engineering
-
-```mermaid
-flowchart LR
-    A[Define problem] --> B[Trustworthy data]
-    B --> C[Measured baseline]
-    C --> D[RAG / LLM workflow]
-    D --> E[Failure-mode tests]
-    E --> F[Safeguards]
-    F --> G[API + deployment]
-```
+**Core toolkit:** Python · PyTorch · TensorFlow · Transformers · FastAPI · Pydantic · vLLM · FAISS · Docker · Streamlit · Django · scikit-learn · pandas · NumPy · SQL · Tesseract OCR
 
 ## Currently exploring
 
@@ -75,14 +86,22 @@ flowchart LR
 - Efficient evaluation and serving of multilingual open-weight models
 - Structured LLM outputs and safety controls for healthcare workflows
 
-**Core toolkit:** Python · PyTorch · TensorFlow · Transformers · FastAPI · Pydantic · vLLM · Streamlit · Django · Docker · FAISS · SQL · OCR
+## Work with me
 
-## Let's work together
+I'm open to **senior Applied AI, Machine Learning and NLP engineering roles** and to **research collaborations** — especially where Persian-language AI, document intelligence or healthcare applications need to move from experiments to dependable products.
 
-I'm open to **Applied AI, Machine Learning, and NLP engineering roles**, as well as research collaborations—especially where Persian-language AI, document intelligence, or healthcare applications need to move from experiments to dependable products.
+**A strong fit if you need to…**
+
+- ship retrieval-augmented systems that can say *"I don't know"* instead of guessing;
+- evaluate open-weight LLMs for a specific language or domain, with numbers you can defend;
+- turn a notebook prototype into a typed, containerized API with health checks and request tracing.
 
 <div align="center">
 
-[![Get in touch on LinkedIn](https://img.shields.io/badge/Start_a_conversation-Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ali-ebrahimi-264236241/)
+[<img src="./assets/cta.svg" width="296" alt="Connect with Ali Ebrahimi on LinkedIn">](https://www.linkedin.com/in/ali-ebrahimi-264236241/)
+
+<br>
+
+<img src="./assets/footer.svg" width="100%" alt="Measured, grounded, deployable.">
 
 </div>
